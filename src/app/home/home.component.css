@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+  }
+
+  #left{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#right{
+
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
