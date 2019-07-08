@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
   TotalBudget:number=0;TotalExpense:number=0;TotalBalance:number=0;
   expenseList:MatTableDataSource<IExpense>;
  // pageSizeOptions:any[];pageSize:any[];length:any[];
- @ViewChild(MatPaginator) paginator:MatPaginator;
- @ViewChild(MatSort) sort:MatSort;
+ @ViewChild(MatPaginator,{static:true}) paginator:MatPaginator;
+ @ViewChild(MatSort,{static:true}) sort:MatSort;
 
   displayedColumns: string[] = ['Edit','ExpId', 'Category', 'ItemName', 'Amount','ExpDate','Delete'];
   constructor(public dialog:MatDialog,private _snackBar: MatSnackBar) { 

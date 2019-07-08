@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule,MatCardModule,MatDialogModule,MatSliderModule
-  ,MatNativeDateModule,MatInputModule,MatGridListModule,MatSnackBarModule,MatPaginatorModule} from '@angular/material';
+  ,MatNativeDateModule,MatInputModule,MatGridListModule,MatSnackBarModule,MatPaginatorModule,MatSortModule} from '@angular/material';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './Home/Home.component';
 import { SettingsComponent } from './Settings/settings.component';
@@ -17,6 +17,9 @@ import {MatTableModule} from '@angular/material/table';
 import { AddExpenseComponent } from './add-expense/add-expense.component';
 import { EditComponent } from './edit/edit.component';
 import {FormControl, Validators} from '@angular/forms';
+
+
+
 
 
 
@@ -41,7 +44,7 @@ const appRoutes: Routes = [
     CustomMaterialModule,
     MatTableModule,MatCardModule,MatDialogModule,
     MatSliderModule,MatNativeDateModule,MatInputModule,
-    MatGridListModule,MatSnackBarModule,MatPaginatorModule,
+    MatGridListModule,MatSnackBarModule,MatPaginatorModule,MatSortModule,
     
     RouterModule.forRoot(
       appRoutes,

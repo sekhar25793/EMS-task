@@ -94,16 +94,7 @@ export class AddExpenseComponent implements OnInit {
    
   }
 
-  categoryFormControl = new FormControl('', [
-    Validators.required]);
-  ItemNameFormControl = new FormControl('', [
-    Validators.required,]);
-  AmountFormControl = new FormControl('', [
-    Validators.required,]);
-    ExpDateFormControl = new FormControl('', [
-    Validators.required,
   
-  ]);
 
 
 }
